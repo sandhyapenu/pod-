@@ -1,0 +1,10 @@
+
+pool:
+ name: Azureagent
+
+stages:
+  - stage: A
+    jobs:
+      - job: Ajob
+        steps:
+          - script: echo "Hello world"
