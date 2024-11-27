@@ -1,0 +1,9 @@
+#base image ubuntulatest
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get -y install apache2
+Expose 80
+
+ENTRYPOINT ["/usr/sbin/apachectl"]
+CMD ["-D","FOREGROUND"]
+
